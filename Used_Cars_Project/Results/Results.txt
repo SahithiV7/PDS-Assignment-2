@@ -1,0 +1,41 @@
+Question2.a:
+
+I got total 6 attributes with missing values. They are [Mileage(2), Engine(36), Power(36), Seats(38), New_Price(5032)].
+
+Mileage, Engine and Seats - Replaced the null values with their means because we got like very few null values and all the missing value attributes are numerical, so to preserve data intrigity and for the accuracy. And coming to power attribute, it is a crucial attribute so droped the rows of the missing values.
+
+For New_price column their are about 5042 missing values, so dropped the column.
+
+Question 2.b:
+
+Removed the string values after the numerical in Mileage, Engine, Power and New_price columns by string.extract() method.
+
+Question 2.c:
+
+Done one hot coding for Fuel_type and Transmission using get_dummies() function.
+
+Question 2.d:
+
+Imported datetime library and calculated the age of the cars by subrating the year and added a new car_new column.
+
+Question 2.e:
+
+Select function:
+Took name, year and transmission colmns from the dataset.
+
+Filter function:
+filtered the dataset on location == banglore.
+
+Rename function:
+renamed the column "Name" as "Car_Name".
+
+Mutate function:
+added a new column "Milage _per_km" by dividing milage and kilometers_driven.
+
+Arrange function:
+arranged mileage values in decending order.
+
+Summarize function:
+summarized maruti cars and averaged their engine and Mileage based on each maruti car models.
+
+
